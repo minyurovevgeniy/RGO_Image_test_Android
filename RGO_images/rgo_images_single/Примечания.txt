@@ -1,0 +1,4 @@
+https://www.php.net/manual/ru/function.imagecreatefromjpeg.php
+https://www.php.net/manual/ru/function.imagesavealpha.php
+https://www.php.net/manual/ru/function.imagejpeg.php
+https://www.php.net/manual/ru/function.imagescale.php

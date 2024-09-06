@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/field"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity = "center"
+    tools:context=".Questions">
+
+    <LinearLayout
+        android:background="#172b59"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/rgo_logo_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/test_heading"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_size"
+            android:text="Информатика"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/questions"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#416198"
+            android:textSize="13sp"
+            android:text="Навигация: свайпы влево и вправо"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="@dimen/text_size"
+            android:id="@+id/question"
+            android:text="Текст вопроса"
+            android:textColor="#416198"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!--<EditText
+                android:id="@+id/myEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    -->
+        </LinearLayout>
+
+        <RadioGroup
+            android:orientation="vertical"
+            android:id="@+id/single_answer_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </RadioGroup>
+
+        <Button
+            android:textSize="@dimen/text_size"
+            android:id="@+id/show_result"
+            android:background="@drawable/blue_button"
+            android:textColor="#FFFFFF"
+            android:text="Завершить"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <Button
+                android:textSize="@dimen/text_size"
+                android:background="@drawable/white_button"
+                android:textColor="#4c6285"
+                android:text="Назад"
+                android:id="@+id/back"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:textSize="@dimen/text_size"
+                android:layout_weight="1"
+                android:background="@drawable/white_button"
+                android:textColor="#4c6285"
+                android:text="Вперед"
+                android:id="@+id/forward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+-->
+
+    </LinearLayout>
+
+</LinearLayout>

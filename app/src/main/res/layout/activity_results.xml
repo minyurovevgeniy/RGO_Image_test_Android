@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Results">
+
+    <LinearLayout
+        android:background="#172b59"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/rgo_logo_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:textSize="@dimen/text_size"
+            android:text="Тест"
+            android:textColor="#4c6285"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="@dimen/text_size"
+            android:textColor="#4c6285"
+            android:id="@+id/current_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow>
+
+                <TextView
+                    android:textSize="@dimen/text_size"
+                    android:text="Количество верных ответов: "
+                    android:textColor="#4c6285"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="@dimen/text_size"
+                    android:id="@+id/current_correct_answers_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:textSize="@dimen/text_size"
+                    android:text="Количество вопросов: "
+                    android:textColor="#4c6285"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="@dimen/text_size"
+                    android:id="@+id/current_total_answers_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:textSize="@dimen/text_size"
+            android:paddingBottom="10dp"
+            android:text="Для подведения итогов нажмите на кнопку с названием теста"
+            android:textColor="#416198"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="@dimen/text_size"
+            android:text="Вопросы, на которые дан неправильный ответ:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="@dimen/text_size"
+            android:id="@+id/wrong_questions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:textSize="@dimen/text_size"
+            android:id="@+id/go_home"
+            android:text="В начало"
+            android:background="@drawable/blue_button"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:textSize="@dimen/text_size"
+            android:background="@drawable/blue_button"
+            android:textColor="#FFFFFF"
+            android:id="@+id/refresh_tests_results"
+            android:text="Обновить список тестов"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ListView
+            android:id="@+id/test_list_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
